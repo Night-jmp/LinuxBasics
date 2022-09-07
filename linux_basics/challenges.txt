@@ -1,0 +1,31 @@
+level 0: cat the flag
+level 1: cat the hidden flag
+level 2: cat with space
+level 3: execute the binary
+level 4: change permissions and execute the binary
+level 5: check for a user created directory
+	dir must be called "ctf_is_life"
+level 6: check for a user created file with certain content
+	file must be called "message_for_admin" and contain "pls give flag ty"
+level 7: check for a user created file with certain permissions
+	user > group > other
+	restrict your file to be RWX for user, read only for group, and no permissions for other
+	file must be named "perm_check" and perms must be 740	
+level 8: check for a directory being removed
+level 9: check for a directiry being removed that contains files
+level 10: cd into dir
+level 11: bunch of fake flags but real one is not a duplicate
+	cat flag*.txt | sort | uniq -c
+level 12: untar a file
+level 13: recursive directories
+	grep -R fitsec
+level 14: grep a large binary file for a flag 
+
+ideas:
+ssh key
+diff files
+file types
+md5sum
+cron
+Bash loop create
+
